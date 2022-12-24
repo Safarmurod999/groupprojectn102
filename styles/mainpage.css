@@ -6,10 +6,324 @@ header {
   left: 0;
   z-index: 8888;
   width: 100%;
+  background-color: var(--black);
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin: 0 12px;
+}
+nav ul li a:hover{
+  opacity: 0.7;
+}
+nav button {
+  font-family: "Inter", sans-serif;
+  border: none;
+  text-align: center;
+  width: 179px;
+  height: 56px;
+  background: #ffffff;
+  padding: 16px 48px;
+  gap: 12px;
+  color: var(--black);
+  margin-left: 32px;
+}
+#home {
+  padding: 208px 0 182px;
+  background-image: url("../images/home-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+}
+#home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+#home h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+#home h1 {
+  width: 60%;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  /* or 114% */
+
+  letter-spacing: -2px;
+
+  /* Light */
+
+  color: #ffffff;
+}
+#home p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  /* Light */
+
+  color: #ffffff;
+}
+#home p span {
+  color: var(--yellow);
+}
+#home span {
+  margin: 16px 0 48px;
+  width: 70%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Light */
+
+  color: #ffffff;
+}
+#posts {
+  padding: 128px 0 128px;
+}
+#posts .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#posts .left {
+  width: 55.9%;
+}
+#posts .left h3,
+#posts .header h3 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: -2px;
+
+  /* Black */
+
+  color: var(--black);
+  margin-bottom: 32px;
+}
+#posts .post-card {
+  padding: 32px;
+  width: 100%;
+  /* Medium grey */
+
+  border: 1px solid #d6d6da;
+}
+#posts .post-card .img-box {
+  margin-bottom: 32px;
+}
+#posts img {
+  width: 100%;
+}
+#posts .post-card h6,
+#posts .right h6 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Dark Grey */
+
+  color: var(--dark-grey);
+  margin-bottom: 16px;
+}
+#posts .post-card h5,
+#posts .right h5,
+#about .right h4,
+#category .header h4,
+#category .category-card h4 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+
+  letter-spacing: -1px;
+
+  /* Black */
+
+  color: var(--black);
+  margin-bottom: 14px;
+}
+#posts .post-card p,
+#about .left p,
+#about .right p,
+#category .category-card {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  /* Medium grey */
+  margin-bottom: 32px;
+  color: #6d6e76;
+}
+#posts .right {
+  width: 40%;
+}
+#posts .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#posts .right .post-item {
+  padding: 32px 115px 25px 32px;
+  transition: 0.3s;
+}
+#posts .right .post-item:hover {
+  background-color: var(--light-yellow);
+}
+#posts .right h5 {
+  font-size: 24px;
+}
+#about .top {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: end;
+}
+#about .top .yellow {
+  width: 62.8%;
+  height: 23px;
+  background-color: var(--yellow);
+}
+#about .top .purple {
+  width: 21%;
+  height: 23px;
+  background-color: var(--purple);
+}
+#about .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 96px 108px 96px 80px;
+  background-color: var(--light-grey);
+}
+#about .left {
+  width: 44%;
+}
+
+#about .left h5,
+#about .right h5 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+#about .left h3 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+#about .left h4 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+}
+#about .right {
+  width: 47%;
+}
+#category {
+  padding: 128px 0 128px;
+}
+#category .header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+#category .category-row {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+#category .category-card {
+  width: 22.5%;
+  padding: 32px;
+  border: 1px solid #dadada;
+  transition: 0.3s;
+}
+#category .category-card:hover{
+  background-color: var(--yellow);
+}
+#category .category-card .img-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: var(--light-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+#category .category-card h4 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
