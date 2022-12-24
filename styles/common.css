@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    font-size: 16px;
+    --black:#232536;
+    --yellow:#FFD050;
+    --purple:#592EA9;
+    --dark-grey:#4C4C4C;
+    --medium-grey:#6D6E76;
+    --light-grey:#F4F4F4;
+    --lavender:#F4F0F8;
+    --light-yellow:#FBF6EA;
+    --btn-hover:#EDC14A;
+}
+a{
+    text-decoration: none;
+}
+button:focus,button,input,select{
+    outline: none;
+}
