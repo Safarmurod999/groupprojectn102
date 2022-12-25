@@ -195,7 +195,7 @@ nav button {
 #posts .post-card p,
 #about .left p,
 #about .right p,
-#category .category-card,
+#category .category-card p,
 #start p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -292,7 +292,42 @@ nav button {
 #about .right {
   width: 47%;
 }
-
+#category {
+  padding: 128px 0 128px;
+}
+#category .header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+#category .category-row {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+#category .category-card {
+  width: 22.5%;
+  padding: 32px;
+  border: 1px solid #dadada;
+  transition: 0.3s;
+}
+#category .category-card:hover {
+  background-color: var(--yellow);
+}
+#category .category-card .img-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: var(--light-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+#category .category-card h4 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
 #start .container {
   position: relative;
 }
