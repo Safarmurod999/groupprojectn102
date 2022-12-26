@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <button id="backtop">
+      <a href="#"><img src="images/home-img/backtop.svg" alt="backtop" /></a>
+    </button>
     <header id="navbar">
       <nav class="container">
         <div class="logo"><img src="images/home-img/logo.svg" alt="logo" /></div>
@@ -18,8 +21,14 @@
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
+          <button class="toggle-btn close-btn" onclick="closeNavbar()">
+            <img src="images/home-img/close.svg" alt="menu" />
+          </button>
           <button id="subscribe">Subscribe</button>
         </div>
+        <button class="toggle-btn" onclick="openNavbar()">
+          <img src="images/home-img/menu.svg" alt="menus" />
+        </button>
       </nav>
     </header>
     <main>
@@ -330,5 +339,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

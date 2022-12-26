@@ -20,6 +20,7 @@ html {
   --lavender: #f4f0f8;
   --light-yellow: #fbf6ea;
   --btn-hover: #edc14a;
+  --shrink-color: -2px 14px 8px 0px rgba(219, 219, 219, 0.2);
 }
 
 /* --- container --- */
@@ -68,7 +69,6 @@ button {
   bottom: 30px;
   right: 30px;
   z-index: 99;
-  font-size: 1.125;
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
@@ -112,7 +112,7 @@ button {
 /* --- navbar --- */
 
 header {
-  padding: 22px 15px;
+  padding: 12px 0;
   transition: 0.5s;
   position: fixed;
   top: 0;
@@ -120,6 +120,10 @@ header {
   z-index: 8888;
   width: 100%;
   background-color: var(--black);
+}
+.navbar-shrink {
+  padding: 7px 0;
+  box-shadow: var(--shrink-color);
 }
 nav {
   width: 100%;
@@ -143,7 +147,7 @@ nav ul li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   color: #fff;
   margin: 0 12px;
@@ -152,7 +156,7 @@ nav ul li a:hover {
   opacity: 0.7;
 }
 
-nav button {
+nav #subscribe {
   font-family: "Inter", sans-serif;
   border: none;
   text-align: center;
@@ -163,6 +167,9 @@ nav button {
   gap: 12px;
   color: var(--black);
   margin-left: 32px;
+}
+.toggle-btn {
+  display: none;
 }
 
 /* --- footer ---- */
@@ -185,7 +192,7 @@ footer h3 {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   display: flex;
   align-items: center;
@@ -206,7 +213,7 @@ footer input {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   display: flex;
   align-items: center;
@@ -225,7 +232,7 @@ footer input {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   color: #ffffff;
   opacity: 0.7;
@@ -234,4 +241,59 @@ footer input {
   display: inline-block;
   margin: 0 13px;
   opacity: 0.5;
+}
+
+/* --- navbar responsive --- */
+@media (max-width:1000px){
+  :root{
+    font-size: 14px;
+  }
+  .nav-menus {
+    /* display: none; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    top: 0;
+    left: -1000px;
+    bottom: 0;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .nav-list {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav #subscribe{
+    margin-left: 0;
+  }
+  .nav-list a {
+    display: inline-block;
+    font-size: 1.875rem;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  .toggle-btn {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  .toggle-btn img {
+    width: 100%;
+  }
+  .close-btn {
+    position: absolute;
+    z-index: 9999;
+    top: 25px;
+    right: 25px;
+  }
+  footer .container{
+    width: 100%;
+  }
 }
