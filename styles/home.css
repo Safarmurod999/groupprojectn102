@@ -1,58 +1,8 @@
-header {
-  padding: 22px 15px;
-  transition: 0.5s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8888;
-  width: 100%;
-  background-color: var(--black);
-}
-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-menus {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-nav ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #fff;
-  margin: 0 12px;
-}
-nav ul li a:hover {
-  opacity: 0.7;
-}
-nav button {
-  font-family: "Inter", sans-serif;
-  border: none;
-  text-align: center;
-  width: 179px;
-  height: 56px;
-  background: #ffffff;
-  padding: 16px 48px;
-  gap: 12px;
-  color: var(--black);
-  margin-left: 32px;
-}
+/* --- home --- */
+ 
 #home {
   padding: 208px 0 182px;
-  background-image: url("../images/home-bg.svg");
+  background-image: url("../images/home-img/home-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -67,7 +17,7 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -78,7 +28,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 64px;
   /* or 114% */
 
@@ -110,14 +60,12 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
-  /* or 175% */
-
-  /* Light */
-
   color: #ffffff;
 }
+/* --- posts --- */
+
 #posts {
   padding: 128px 0 128px;
 }
@@ -135,22 +83,15 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
-  /* identical to box height, or 133% */
-
   letter-spacing: -2px;
-
-  /* Black */
-
   color: var(--black);
   margin-bottom: 32px;
 }
 #posts .post-card {
   padding: 32px;
   width: 100%;
-  /* Medium grey */
-
   border: 1px solid #d6d6da;
 }
 #posts .post-card .img-box {
@@ -164,12 +105,8 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
-  /* identical to box height, or 143% */
-
-  /* Dark Grey */
-
   color: var(--dark-grey);
   margin-bottom: 16px;
 }
@@ -181,14 +118,9 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 40px;
-  /* or 143% */
-
   letter-spacing: -1px;
-
-  /* Black */
-
   color: var(--black);
   margin-bottom: 14px;
 }
@@ -200,7 +132,7 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   /* or 175% */
 
@@ -225,8 +157,11 @@ nav button {
   background-color: var(--light-yellow);
 }
 #posts .right h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
+
+/* --- about --- */
+
 #about .top {
   display: flex;
   flex-direction: row;
@@ -261,7 +196,7 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -272,7 +207,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   letter-spacing: -2px;
   color: var(--black);
@@ -283,7 +218,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 32px;
   display: flex;
   align-items: center;
@@ -292,6 +227,7 @@ nav button {
 #about .right {
   width: 47%;
 }
+/* --- category --- */
 #category {
   padding: 128px 0 128px;
 }
@@ -325,25 +261,31 @@ nav button {
   margin-bottom: 16px;
 }
 #category .category-card h4 {
-  font-size: 28px;
+  font-size: 1.75;
   margin-bottom: 4px;
 }
+
+/* --- start --- */
+
 #start .container {
   position: relative;
 }
 #start .start-box {
   background-color: #fff;
   bottom: 0;
-  right: 0;
+  right: 15px;
   position: absolute;
   width: 53.8%;
   padding: 80px;
+}
+#start .img-box img{
+  width: 100%;
 }
 #start h4 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--black);
@@ -353,7 +295,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 64px;
   letter-spacing: -2px;
   color: var(--black);
@@ -362,6 +304,9 @@ nav button {
 #start .readmore {
   margin-top: 10px;
 }
+
+/* --- authors --- */
+
 #authors {
   padding: 128px 0 128px;
 }
@@ -375,7 +320,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   letter-spacing: -2px;
   color: var(--black);
@@ -406,7 +351,7 @@ nav button {
   margin-bottom: 20px;
 }
 #authors .author-card h4 {
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 40px;
   letter-spacing: -1px;
   margin-bottom: 5px;
@@ -416,7 +361,7 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   text-align: center;
   margin-bottom: 20px;
@@ -455,7 +400,7 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -479,7 +424,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
   color: var(--black);
   margin-bottom: 121px;
@@ -491,6 +436,9 @@ nav button {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 0;
+}
+#authors .bottom h4{
   margin-bottom: 0;
 }
 
@@ -507,7 +455,7 @@ nav button {
 }
 #authors .bottom .img-box h4 {
   margin-left: 16px;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
 }
 #authors .bottom .arrows {
@@ -516,8 +464,10 @@ nav button {
   align-items: center;
   justify-content: space-between;
 }
+
+/* --- join --- */
 #join {
-  padding: 128px 0 128px;
+  padding: 0 0 128px;
 }
 #join .container {
   display: flex;
@@ -531,7 +481,7 @@ nav button {
   font-family: "Sen", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   /* or 133% */
 
@@ -545,77 +495,217 @@ nav button {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   text-align: center;
   color: var(--medium-grey);
   margin-bottom: 32px;
 }
-footer {
-  padding: 60px 0 56px;
-  background-color: var(--black);
+
+
+/* --- first desktop --- */
+
+@media (max-width:1310px){
+  :root{
+    font-size: 13px;
+  }
+  #posts .right h5{
+    font-size: 1.5rem;
+  }
+  #authors .author-card h4 {
+    font-size: 1.75rem;
+  }
+  #authors .bottom .arrows{
+    width: 27%;
+  }
+  #authors .right h4{
+    padding-right: 0;
+  }
 }
-footer .subscribe {
-  margin-top: 54px;
-  padding: 80px 64px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #2e3040;
+@media (max-width:1100px){
+  :root{
+    font-size: 12px;
+  }
+  #posts .right h5{
+    font-size: 1.5rem;
+  }
+  #authors .author-card {
+    padding: 20px;
+  }
+  #authors .author-card h4 {
+    font-size: 1.75rem;
+  }
+  #authors .bottom .arrows{
+    width: 29%;
+  }
+
 }
-footer h3 {
-  width: 43%;
-  font-family: "Sen", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -2px;
-  color: #ffffff;
+@media (max-width:980px){
+  #posts .container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  #posts .right .post-column{
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #posts .container .right,#posts .left,#posts .post-card{
+    
+    width: 100%;
+  }
+  #posts .right .post-column .post-item{
+    padding-right: 32px;
+    width: 100%;
+  }
+  #about .bottom{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #category .category-row{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  #category .category-row .category-card{
+    width: 100%;
+  }
+  #category .category-card p{
+    margin-bottom: 0;
+  }
+  #authors .logo-row{
+    
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+  }
+  #authors .testimonials{
+    flex-direction: column;
+  }
+  #authors .testimonials .left{
+    border: none;
+  }
+  #authors .testimonials .left,#authors .testimonials .right{
+    width: 80%;
+  }
+  #authors .testimonials .right{
+    padding-left: 0;
+  }
 }
-footer .input-box {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+@media (max-width:865px){
+  #start .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+  #start .start-box{
+    position: static;
+    width: 100%;
+  }
+  #authors .author-row{
+    display: grid;
+    grid-row-gap: 50px;
+    grid-column-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #authors .author-row .author-card{
+    width: 100%;
+  
+  }
+    #authors .testimonials{
+      padding: 50px;
+    }
+    footer .subscribe{
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 1fr;
+      grid-gap: 30px;
+    }
+    footer .subscribe h3{
+      width: 100%;
+    }
+    footer .input-box{
+      width: 100%;
+    }
+    .footer-bottom{
+      flex-direction: column;
+    }
+    .footer-bottom p{
+      margin-bottom: 30px;
+      text-align: center;
+      width: 80%;
+    }
 }
-footer input {
-  width: 65%;
-  border: 1px solid var(--dark-grey);
-  background-color: transparent;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  color: var(--medium-grey);
-  padding: 14px 24px;
+@media (max-width:670px){
+  #home .container{
+    align-items: center;
+    text-align: center;
+  }
+  #start .start-box{
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  #authors .author-row{
+    grid-gap: 30px;
+  }
+  #authors .logo-row{
+    grid-gap: 30px;
+  }
+  #authors .testimonials .left{
+    padding-bottom: 0;
+  }
+  #authors .testimonials .left,#authors .testimonials .right{
+    width: 100% ;
+  }
+  #about .bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  #about .bottom .left,#about .bottom .right{
+    width: 100%;
+  }
+  #join h3 , #join p{
+    width: 80%;
+  }
+  
 }
-.footer-bottom {
-  padding-top: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+@media (max-width:550px){
+  #posts .right   .post-column{
+    grid-template-columns: 1fr;
+  }
+  #category .category-row{
+    grid-template-columns: 1fr;
+  }
+  #authors .author-row{
+    grid-template-columns: 1fr;
+  }
+  #authors .logo-row{
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #authors .testimonials .left{
+    padding-right: 0;
+  }
+  #authors .testimonials .bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #authors .testimonials .left h3,#authors .testimonials .left p{
+    width: 100%;
+  }
 }
-.footer-bottom p {
-  width: 27.5%;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #ffffff;
-  opacity: 0.7;
-}
-.footer-bottom img{
-  display: inline-block;
-  margin: 0 13px;
-  opacity: 0.5;
+@media (max-width:400px){
+
+  #authors .logo-row{
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
