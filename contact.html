@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tohir</title>
-    <link rel="stylesheet" href="styles/mainpage.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-    <header id="navbar">
-        <nav class="container">
-          <div class="logo"><img src="images/logo.svg" alt="logo" /></div>
-          <div class="nav-menus" id="navbar-responsive">
-            <ul class="nav-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-            <button id="subscribe">Subscribe</button>
-          </div>
-        </nav>
-      </header>
+  <header id="navbar">
+    <nav class="container">
+      <div class="logo"><img src="images/home-img/logo.svg" alt="logo" /></div>
+      <div class="nav-menus" id="navbar-responsive">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog1.html">Blog</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="toggle-btn close-btn" onclick="closeNavbar()">
+          <img src="images/home-img/close.svg" alt="menu" />
+        </button>
+        <button id="subscribe">Subscribe</button>
+      </div>
+      <button class="toggle-btn" onclick="openNavbar()">
+        <img src="images/home-img/menu.svg" alt="menus" />
+      </button>
+    </nav>
+  </header>
       <section>
-        <div class="container">
+        <div class="container-1">
           <h3> Contact us</h3>
           <h1>Let’s Start a Conversation</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
@@ -59,5 +64,36 @@
           <button>Send Message</button>
         </div>
       </section>
+      <footer>
+        <nav class="container">
+          <div class="logo"><img src="images/home-img/logo.svg" alt="logo" /></div>
+          <div class="nav-menus" id="navbar-responsive">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="blog1.html">Blog</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="subscribe container">
+          <h3>Subscribe to our news letter to get latest updates and news</h3>
+          <div class="input-box">
+            <input type="email" placeholder="Enter Your Email" required />
+            <button class="readmore">Subscribe</button>
+          </div>
+          
+        </div>
+        <div class="footer-bottom container">
+          <p>Finstreet 118 2561 Fintown Hello@finsweet.com 020 7993 2905</p>
+          <div class="footer-icon">
+            <img src="images/home-img/facebook-icon-white.svg" alt="facebook-icon" />
+            <img src="images/home-img/twitter-icon-white.svg" alt="twitter-icon" />
+            <img src="images/home-img/instagram-icon-white.svg" alt="images" />
+            <img src="images/home-img/linkedin-icon-white.svg" alt="link" />
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.js"></script>
 </body>
 </html>
