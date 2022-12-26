@@ -337,9 +337,6 @@ border: none;
   }
 }
 @media only screen and (max-width: 1081px){
-  .post-box{
-    width: ;
-  }
   .step-box{
     flex-direction: column;
     /* flex-wrap: wrap; */

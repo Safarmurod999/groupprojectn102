@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safarmurod</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -47,7 +48,7 @@
       </section>
       <section id="posts">
         <div class="container">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <h3>Featured Post</h3>
             <div class="post-card">
               <div class="img-box">
@@ -71,7 +72,7 @@
               </div>
             </div>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <div class="header">
               <h3>All Posts</h3>
               <h6>View All</h6>
@@ -141,29 +142,29 @@
       <section id="category">
         <div class="container">
           <div class="header"><h4>Choose A Category</h4></div>
-          <div class="category-row">
-            <div class="category-card">
+          <div class="category-row" >
+            <div class="category-card" data-aos="fade-up">
               <div class="img-box">
                 <img src="images/home-img/business-icon.svg" alt="images" />
               </div>
               <h4>Business</h4>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             </div>
-            <div class="category-card">
+            <div class="category-card" data-aos="fade-down">
               <div class="img-box">
                 <img src="images/home-img/shuttle-icon.svg" alt="images" />
               </div>
               <h4>Startup</h4>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             </div>
-            <div class="category-card">
+            <div class="category-card" data-aos="fade-up">
               <div class="img-box">
                 <img src="images/home-img/economy-icon.svg" alt="images" />
               </div>
               <h4>Economy</h4>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             </div>
-            <div class="category-card">
+            <div class="category-card" data-aos="fade-down">
               <div class="img-box">
                 <img src="images/home-img/technology-icon.svg" alt="images" />
               </div>
@@ -202,7 +203,7 @@
             <h3>List of Authors</h3>
           </div>
           <div class="author-row">
-            <div class="author-card">
+            <div class="author-card" data-aos="zoom-in">
               <img
                 src="images/home-img/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.svg"
                 alt="man"
@@ -216,7 +217,7 @@
                 <img src="images/home-img/linkedin-icon.svg" alt="linkedin-icon" />
               </div>
             </div>
-            <div class="author-card">
+            <div class="author-card" data-aos="zoom-in">
               <img
                 src="images/home-img/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg"
                 alt="woman"
@@ -230,7 +231,7 @@
                 <img src="images/home-img/linkedin-icon.svg" alt="linkedin-icon" />
               </div>
             </div>
-            <div class="author-card">
+            <div class="author-card" data-aos="zoom-in">
               <img
                 src="images/home-img/fashion-woman-cute-shoes-5704849.svg"
                 alt="fashion-woman-cute-shoes-5704849"
@@ -244,7 +245,7 @@
                 <img src="images/home-img/linkedin-icon.svg" alt="linkedin-icon" />
               </div>
             </div>
-            <div class="author-card">
+            <div class="author-card" data-aos="zoom-in">
               <img
                 src="images/home-img/content-baker-with-delicious-puff-in-cafeteria-6205509.svg"
                 alt="baker"
@@ -340,5 +341,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
